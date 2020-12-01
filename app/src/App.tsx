@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import GlobalStyle from './styles/global';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Header from './components/Header';
 import Houses from './pages/Houses';
@@ -15,6 +17,17 @@ const App: React.FC = () => {
           <Route exact path="/" component={Houses} />
           <Route exact path="/maps" component={Maps} />
         </Switch>
+        <ToastContainer
+          position="bottom-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </BrowserRouter>
       <GlobalStyle />
     </div>

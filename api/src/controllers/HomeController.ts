@@ -38,7 +38,8 @@ class HomeController {
 
         // Retornando erro caso ja exista a casa cadastrada
         if (houseExist.length > 0) {
-            return res.status(400).json({ error: 'House already exists' });
+            console.log('entrou no erro ja existe');
+            return res.status(400).json({ error: 'Casa já cadastrada' });
         }
 
         // salva a residência

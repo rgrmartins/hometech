@@ -17,7 +17,10 @@ const Maps: React.FC = () => {
   return (
     <Container>
       <Content>
-        {console.log(houses)}
+        {
+          // eslint-disable-next-line
+          console.log(houses)
+        }
         <h1>Mapa de Calor das residências</h1>
         <h3>Buscar na base e criar o mapa de calor</h3>
       </Content>
