@@ -56,7 +56,6 @@ export function Form() {
     <FormStyles>
       <h1>Formulário de Cadastro</h1>
       <form onSubmit={onSubmit}>
-        {console.log(errors)}
         <div>
           <label htmlFor="cep">CEP</label>
           <input

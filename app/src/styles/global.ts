@@ -37,4 +37,8 @@ export default createGlobalStyle`
   a{
     text-decoration: none;
   }
+  
+  .mapid {
+    height: 180px;
+  }
 `;
